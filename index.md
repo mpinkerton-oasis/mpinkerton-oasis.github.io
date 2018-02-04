@@ -23,4 +23,4 @@ The main components of the ecosystem are:
 **Oasis Model Library** is a hosted catalogue for Oasis models, hosted in AWS. It allows:  
 The components fit together into an ecosystem for  model building, publishing and operation as illustrated in the following diagram:
 
-![Image](img/)
+![Oasis Ecosystem](static/oasis_ecosystem.jpg)
