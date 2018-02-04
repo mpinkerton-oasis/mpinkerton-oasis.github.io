@@ -101,10 +101,10 @@ prioritization, specification and review of working software.
 
 ## Documentation
 
-[User Interface Guide](docs/Oasis_User_Interface_guide.pdf)
-[Model Developer Guide](docs/Oasis_Model_Developer_Guide.pdf)
-Ktools
-Code docs
+- [User Interface Guide](docs/Oasis_User_Interface_guide.pdf)
+- [Model Developer Guide](docs/Oasis_Model_Developer_Guide.pdf)
+- Ktools
+- Code docs
 
 ## Getting started
 
