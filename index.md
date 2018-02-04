@@ -48,6 +48,8 @@ prioritization, specification and review of working software.
 
 ## Oasis UI And Platform
 
+![Oasis UI and Platform architecture](static/oasis_architecture_tiers.jpg)
+
 | Component |	Description | Technology |
 | Oasis UI	| Browser based application for managing exposure data and operating modelling workflows |	R Shiny, ShinyProxy |
 |Oasis | UI API	Services for interacting with exposure and output data |	Flask |
@@ -58,38 +60,31 @@ prioritization, specification and review of working software.
 |Keys Server |	Model specific services for generating area peril and vulnerability keys for a particular set of exposures.	| Flask, Python |
 |Analysis Worker |	Executes a model. |	Celery, running as daemon, ktools, model data |
 
-![Oasis UI and Platform architecture](static/oasis_architecture_tiers.jpg)
-
 ## Technologies
 
 |Using|
-|Python 2.7 
-C++ 11
-SQL Server 2016
-Docker
-Ubuntu 16.07
-AWS
-Jenkins 2 with BlueOcean
-Flask 
-Apache
-Terraform
-Sphinx
-|
+|| Python 2.7 | General system programming and tools || 
+|| C++ 11 | Simulation and analytics kernel. ||
+|| SQL Server 2016 | Application database for UI. ||
+|| Docker | Deployment of Oasis Platform and UI. ||
+|| Ubuntu 16.07 | Development servers and base Docker image. ||
+|| AWS EC2 | Cloud infrastructure for Oasis Model Library and Oasis Pltaform deployment. || 
+|| Jenkins 2 with BlueOcean | CI system. ||
+|| Flask | Web service framework. || 
+|| Apache | Web servers. ||
+|| Terraform | Infrastructure automation. ||
+|| Sphinx | Code documentation generation. ||
+|| RShiny | Application framework build on R. ||
+|| ShinyProxy | Server for scaling RShiny applications. ||
 |Adopting|
-|
-RedHat
-Python 3
-Azure
-MySql
-
-|
+|| Python 3 | General system programming and tools. ||
+|| RedHat | Development servers and base Docker image. ||
+|| Azure | Oasis Platform deployment. ||
+|| MySql | Application database for UI. ||
 |Trialing|
-|
-Kubernetes
-Nginx
-Jupyter
-MySql
-|
+|| Kubernetes | ||
+|| Nginx |  ||
+|| Jupyter | Python notebooks for running Oasis MDK. ||
 
 ## Repository Structure
 
