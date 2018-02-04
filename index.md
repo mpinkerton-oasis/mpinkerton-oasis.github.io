@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+## Mission
 
-You can use the [editor on GitHub](https://github.com/mpinkerton-oasis/mpinketon-oasis.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Oasis Loss Modelling Framework is an open source catastrophe modelling platform, free to use by anyone. It is also a community that seeks to unlock and change the world around catastrophe modelling to better understand risk in insurance and beyond. While its development is largely driven by the global (re-)insurance community, it seeks to provide tools and utility to all.
+- To learn more about our organization and community, visit [our website](http://www.oasislmf.org)
+- To learn more about the role of models in risk assessment and how to use the Oasis Loss Modelling Framework, take [our MOOC](http://www.oasismooc.org/)
+- To lean about our development plans, constructed and prioritised based on feedback from our community, visit our [backlog board](https://trello.com/b/7O0krVYr/backlog)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Loss Modelling Framework
 
-### Markdown
+The Oasis Loss Modelling Framework supports a full eco-system that allows risk models to be built, published and operated in a standardized manner. The main users of the ecosystem are:
+**Model developers**, who build, test and publish the risk models. They are typically scientists or software developers working in a risk modelling company, or academics users.
+**Risk modellers** who operate the models for decision support purposes. They core user group are analysts at insurance or reinsurance organizations, as well government and third sector users.
+**Enterprise risk systems** at insurance or reinsurance organizations, where Oasis risk models will be integrated into pricing and portfolio management workflows.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The main components of the ecosystem are:
 
-```markdown
-Syntax highlighted code block
+**Oasis Platform** is a catastrophe modelling system that encompasses a set of data standards, an API, tools and components for building and running models. This is the core part of Oasis underpinning the other components and is where most of the domain specific code and performance optimization is required. We will refer to a deployed version of the LMF, be that on a cluster, on an analysis server, in the cloud, as an Oasis.
 
-# Header 1
-## Header 2
-### Header 3
+**Oasis User Interface (UI)** is a web-based application for uploading exposure data, running models deployed in Oasis, and retrieving results data. It is targeted at operating models by (re)insurance companies in in conjunction with existing exposure management and reporting tools; model evaluation; and using models in government or third sector contexts.
+ 
+**Oasis Model Development Kit (MDK)** is a set of tools for building, calibrating and creating a model, ready to be deployed into the Oasis Platform. It is designed with a model developer or academic user in mind, who are likely to be comfortable working directly with the data from the command line or programmatically.  
 
-- Bulleted
-- List
+**Oasis Model Library** is a hosted catalogue for Oasis models, hosted in AWS. It allows:  
+The components fit together into an ecosystem for  model building, publishing and operation as illustrated in the following diagram:
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mpinkerton-oasis/mpinketon-oasis.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Image](img/)
