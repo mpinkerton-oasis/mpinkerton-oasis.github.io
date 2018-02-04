@@ -62,29 +62,31 @@ prioritization, specification and review of working software.
 
 ## Technologies
 
-|Using|
-|| Python 2.7 | General system programming and tools || 
-|| C++ 11 | Simulation and analytics kernel. ||
-|| SQL Server 2016 | Application database for UI. ||
-|| Docker | Deployment of Oasis Platform and UI. ||
-|| Ubuntu 16.07 | Development servers and base Docker image. ||
-|| AWS EC2 | Cloud infrastructure for Oasis Model Library and Oasis Pltaform deployment. || 
-|| Jenkins 2 with BlueOcean | CI system. ||
-|| Flask | Web service framework. || 
-|| Apache | Web servers. ||
-|| Terraform | Infrastructure automation. ||
-|| Sphinx | Code documentation generation. ||
-|| RShiny | Application framework build on R. ||
-|| ShinyProxy | Server for scaling RShiny applications. ||
-|Adopting|
-|| Python 3 | General system programming and tools. ||
-|| RedHat | Development servers and base Docker image. ||
-|| Azure | Oasis Platform deployment. ||
-|| MySql | Application database for UI. ||
-|Trialing|
-|| Kubernetes | ||
-|| Nginx |  ||
-|| Jupyter | Python notebooks for running Oasis MDK. ||
+### Using
+| Python 2.7 | General system programming and tools | 
+| C++ 11 | Simulation and analytics kernel. |
+| SQL Server 2016 | Application database for UI. |
+| Docker | Deployment of Oasis Platform and UI. |
+| Ubuntu 16.07 | Development servers and base Docker image. |
+| AWS EC2 | Cloud infrastructure for Oasis Model Library and Oasis Pltaform deployment. |
+| Jenkins 2 with BlueOcean | CI system. |
+| Flask | Web service framework. | 
+| Apache | Web server. |
+| Terraform | Infrastructure automation. |
+| Sphinx | Code documentation generation. |
+| RShiny | Application framework build on R. |
+| ShinyProxy | Server for scaling RShiny applications. |
+
+### Adopting|
+| Python 3 | General system programming and tools. |
+| RedHat | Development servers and base Docker image. |
+| Azure | Oasis Platform deployment. |
+| MySql | Application database for UI. |
+
+### Trialing|
+| Kubernetes | Managing Oasis Platform compute cluster. |
+| Nginx | Web server. |
+| Jupyter | Python notebooks for running Oasis MDK. |
 
 ## Repository Structure
 
@@ -99,8 +101,8 @@ prioritization, specification and review of working software.
 
 ## Documentation
 
-Flamingo User Guide
-Model Developer Guide
+[User Interface Guide](docs/Oasis_User_Interface_guide.pdf)
+[Model Developer Guide](docs/Oasis_Model_Developer_Guide.pdf)
 Ktools
 Code docs
 
@@ -115,12 +117,3 @@ TODO
 ## Support
 
 TODO
-
-
-
-
-
-
-
-
-
