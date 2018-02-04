@@ -10,8 +10,11 @@ Oasis Loss Modelling Framework is an open source catastrophe modelling platform,
 ## Loss Modelling Framework
 
 The Oasis Loss Modelling Framework supports a full eco-system that allows risk models to be built, published and operated in a standardized manner. The main users of the ecosystem are:
+
 **Model developers**, who build, test and publish the risk models. They are typically scientists or software developers working in a risk modelling company, or academics users.
+
 **Risk modellers** who operate the models for decision support purposes. They core user group are analysts at insurance or reinsurance organizations, as well government and third sector users.
+
 **Enterprise risk systems** at insurance or reinsurance organizations, where Oasis risk models will be integrated into pricing and portfolio management workflows.
 
 The main components of the ecosystem are:
@@ -50,7 +53,7 @@ prioritization, specification and review of working software.
 
 ![Oasis UI and Platform architecture](static/oasis_architecture_tiers.jpg)
 
-| Component |	Description | Technology |
+| **Component** |	**Description** | **Technology** |
 | Oasis UI	| Browser based application for managing exposure data and operating modelling workflows |	R Shiny, ShinyProxy |
 |Oasis | UI API	Services for interacting with exposure and output data |	Flask |
 |Oasis UI Database	| Storage for exposure data, workflow configurations and system data. | SQL Server | 
@@ -90,7 +93,7 @@ prioritization, specification and review of working software.
 
 ## Repository Structure
 
-| Respository name	| Purpose |
+| **Respository name**	| **Purpose** |
 | OasisLMF	| oasislmf Python package, with the core oasis business logic, MDK command line tools and the Oasis API client. |
 | OasisPlatform	| Flask application that provides the OasisApi and the Celery worker for running a model. |
 | OasisKeysServer	| Flask application for keys services. |
