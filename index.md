@@ -67,6 +67,7 @@ prioritization, specification and review of working software.
 
 ### Using
 
+|||
 | Python 2.7 | General system programming and tools | 
 | C++ 11 | Simulation and analytics kernel. |
 | SQL Server 2016 | Application database for UI. |
@@ -83,6 +84,7 @@ prioritization, specification and review of working software.
 
 ### Adopting
 
+|||
 | Python 3 | General system programming and tools. |
 | RedHat | Development servers and base Docker image. |
 | Azure | Oasis Platform deployment. |
@@ -90,6 +92,7 @@ prioritization, specification and review of working software.
 
 ### Trialing
 
+|||
 | Kubernetes | Managing Oasis Platform compute cluster. |
 | Nginx | Web server. |
 | Jupyter | Python notebooks for running Oasis MDK. |
