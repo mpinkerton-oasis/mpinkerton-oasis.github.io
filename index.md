@@ -3,8 +3,8 @@
 ## Mission
 
 Oasis Loss Modelling Framework is an open source catastrophe modelling platform, free to use by anyone. It is also a community that seeks to unlock and change the world around catastrophe modelling to better understand risk in insurance and beyond. While its development is largely driven by the global (re-)insurance community, it seeks to provide tools and utility to all.
-- To learn more about our organization and community, visit [our website](http://www.oasislmf.org)
-- To learn more about the role of models in risk assessment and how to use the Oasis Loss Modelling Framework, take [our MOOC](http://www.oasismooc.org/)
+- To learn about our organization and community, visit our [website](http://www.oasislmf.org)
+- To learn about the role of catastrophe models in risk assessment and the Oasis Loss Modelling Framework is used, take our [MOOC](http://www.oasismooc.org/)
 - To lean about our development plans, constructed and prioritised based on feedback from our community, visit our [backlog board](https://trello.com/b/7O0krVYr/backlog)
 
 ## Loss Modelling Framework
