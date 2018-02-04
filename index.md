@@ -60,6 +60,69 @@ prioritization, specification and review of working software.
 
 ![Oasis UI and Platform architecture](static/oasis_architecture_tiers.jpg)
 
+## Technologies
+
+|Using|
+|Python 2.7 
+C++ 11
+SQL Server 2016
+Docker
+Ubuntu 16.07
+AWS
+Jenkins 2 with BlueOcean
+Flask 
+Apache
+Terraform
+Sphinx
+|
+|Adopting|
+|
+RedHat
+Python 3
+Azure
+MySql
+
+|
+|Trialing|
+|
+Kubernetes
+Nginx
+Jupyter
+MySql
+|
+
+## Repository Structure
+
+| Respository name	| Purpose |
+| OasisLMF	| oasislmf Python package, with the core oasis business logic, MDK command line tools and the Oasis API client. |
+| OasisPlatform	| Flask application that provides the OasisApi and the Celery worker for running a model. |
+| OasisKeysServer	| Flask application for keys services. |
+| Ktools	| C++ kernel tools. |
+| OasisUI	| Shiny application, Flask app and database for the Flamingo application. |
+| Cookiecutter-OasisModel	| Cookiecutter templating for a model implementation. |
+| OasisPiWind	| Example model implementation. |
+
+## Documentation
+
+Flamingo User Guide
+Model Developer Guide
+Ktools
+Code docs
+
+## Getting started
+
+TODO 
+
+## Build process
+
+TODO
+
+## Support
+
+TODO
+
+
+
 
 
 
