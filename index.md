@@ -135,7 +135,7 @@ TODO
 | Cookiecutter-OasisModel	| Cookiecutter templating for a model implementation. |
 | OasisPiWind	| Example model implementation. |
 
-## Documentatio
+## Documentation
 
 - [User Interface Guide](docs/Oasis_User_Interface_guide.pdf)
 - [Model Developer Guide](docs/Oasis_Model_Developer_Guide.pdf)
