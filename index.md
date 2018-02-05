@@ -1,11 +1,11 @@
-# Mission
+## Mission
 
 Oasis Loss Modelling Framework is an open source catastrophe modelling platform, free to use by anyone. It is also a community that seeks to unlock and change the world around catastrophe modelling to better understand risk in insurance and beyond. While its development is largely driven by the global (re-)insurance community, it seeks to provide tools and utility to all.
 - To learn about our organization and community, visit our [website](http://www.oasislmf.org)
 - To learn about the role of catastrophe models in risk assessment and the Oasis Loss Modelling Framework is used, take our [MOOC](http://www.oasismooc.org/)
 - To lean about our development plans, constructed and prioritised based on feedback from our community, visit our [backlog board](https://trello.com/b/7O0krVYr/backlog)
 
-# Loss Modelling Framework
+## Loss Modelling Framework
 
 The Oasis Loss Modelling Framework supports a full eco-system that allows risk models to be built, published and operated in a standardized manner. The main users of the ecosystem are:
 
@@ -29,7 +29,7 @@ The components fit together into an ecosystem for  model building, publishing an
 
 ![Oasis Ecosystem](static/oasis_ecosystem.jpg)
 
-# Development Approach
+## Development Approach
 
 1.We build open source software. This allows the community to directly review and critique our code and methodologies, and to contribute code for our review. 
 
@@ -47,13 +47,13 @@ prioritization, specification and review of working software.
 
 5.We use partnerships to provide scale, for hosting, support and non-core development. 
 
-# Oasis Platform
+## Oasis Platform
 
-## Oasis UI
+### Oasis UI
 
 TODO
 
-## Oasis Platform Architecture
+### Oasis Platform Architecture
 
 ![Oasis UI and Platform architecture](static/oasis_architecture_tiers.jpg)
 
@@ -69,35 +69,34 @@ TODO
 
 # Modelling Approach
 
-## Importing exposure data
+### Importing exposure data
 
 TODO
 
-## Simulation methodology
+### Simulation methodology
 
 TODO
 
-## Financial module 
+### Financial module 
 
 TODO
 
-## Outputs
+### Outputs
 
 TODO
 
-# Getting started
+## Getting started
 
 TODO 
 
-# Support
+## Support
 
 TODO
 
-# Technologies
+## Technologies
 
-## Using
+### Using
 
-|||
 | Python 2.7 | General system programming and tools | 
 | C++ 11 | Simulation and analytics kernel. |
 | SQL Server 2016 | Application database for UI. |
@@ -112,22 +111,20 @@ TODO
 | RShiny | Application framework build on R. |
 | ShinyProxy | Server for scaling RShiny applications. |
 
-## Adopting
+### Adopting
 
-|||
 | Python 3 | General system programming and tools. |
 | RedHat | Development servers and base Docker image. |
 | Azure | Oasis Platform deployment. |
 | MySql | Application database for UI. |
 
-## Trialing
+### Trialing
 
-|||
 | Kubernetes | Managing Oasis Platform compute cluster. |
 | Nginx | Web server. |
 | Jupyter | Python notebooks for running Oasis MDK. |
 
-# Repository Structure
+## Repository Structure
 
 | **Respository name**	| **Purpose** |
 | OasisLMF	| oasislmf Python package, with the core oasis business logic, MDK command line tools and the Oasis API client. |
@@ -138,13 +135,13 @@ TODO
 | Cookiecutter-OasisModel	| Cookiecutter templating for a model implementation. |
 | OasisPiWind	| Example model implementation. |
 
-# Documentatio
+## Documentatio
 
 - [User Interface Guide](docs/Oasis_User_Interface_guide.pdf)
 - [Model Developer Guide](docs/Oasis_Model_Developer_Guide.pdf)
 - Ktools
 - Code docs
 
-# Build process
+## Build process
 
 TODO
