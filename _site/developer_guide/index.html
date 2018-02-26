@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Development Approach | Oasis Loss Modelling Framework</title>
+<meta property="og:title" content="Development Approach" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Open source catastrophe modelling platform, free to use by all" />
+<meta property="og:description" content="Open source catastrophe modelling platform, free to use by all" />
+<link rel="canonical" href="http://localhost:4000/developer_guide/" />
+<meta property="og:url" content="http://localhost:4000/developer_guide/" />
+<meta property="og:site_name" content="Oasis Loss Modelling Framework" />
+<script type="application/ld+json">
+{"name":null,"description":"Open source catastrophe modelling platform, free to use by all","author":null,"@type":"WebPage","url":"http://localhost:4000/developer_guide/","publisher":null,"image":null,"headline":"Development Approach","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Oasis Loss Modelling Framework" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Oasis Loss Modelling Framework logo"></a>
+				Oasis Loss Modelling Framework
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav >
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/"></a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/"></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Oasis Loss Modelling Framework</h2>
+				<h3>Development Approach</h3>
+			</div>
+			<article class="content">
+				<h2 id="development-approach">Development Approach</h2>
+
+<p>1.We build open source software. This allows the community to directly review and critique our code and methodologies, and to contribute code for our review.</p>
+
+<p>2.We use open source technology. We look to build on standard, modern technologies that 
+will reduce the operational cost and/or improve the operational performance of models, that 
+have solid support options for enterprise use, and that are free for general use.</p>
+
+<p>3.We are building a full stack development team. Every team member should understand the 
+system and technologies, be able to build and test the system and have a working knowledge 
+of catastrophe modelling.</p>
+
+<p>4.We use the community to drive development. We have direct access to many of the leading 
+practitioners in the catastrophe modelling domain, and we get practical input through feature 
+prioritization, specification and review of working software.</p>
+
+<p>5.We use partnerships to provide scale, for hosting, support and non-core development.</p>
+
+<h2 id="repository-structure">Repository Structure</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Respository name</strong></td>
+      <td><strong>Purpose</strong></td>
+    </tr>
+    <tr>
+      <td>OasisLMF</td>
+      <td>oasislmf Python package, with the core oasis business logic, MDK command line tools and the Oasis API client.</td>
+    </tr>
+    <tr>
+      <td>OasisPlatform</td>
+      <td>Flask application that provides the OasisApi and the Celery worker for running a model.</td>
+    </tr>
+    <tr>
+      <td>OasisKeysServer</td>
+      <td>Flask application for keys services.</td>
+    </tr>
+    <tr>
+      <td>Ktools</td>
+      <td>C++ kernel tools.</td>
+    </tr>
+    <tr>
+      <td>OasisUI</td>
+      <td>Shiny application, Flask app and database for the Flamingo application.</td>
+    </tr>
+    <tr>
+      <td>Cookiecutter-OasisModel</td>
+      <td>Cookiecutter templating for a model implementation.</td>
+    </tr>
+    <tr>
+      <td>OasisPiWind</td>
+      <td>Example model implementation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="build-process">Build process</h2>
+
+<p>TODO</p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

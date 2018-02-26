@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Oasis Platform Architecture | Oasis Loss Modelling Framework</title>
+<meta property="og:title" content="Oasis Platform Architecture" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Open source catastrophe modelling platform, free to use by all" />
+<meta property="og:description" content="Open source catastrophe modelling platform, free to use by all" />
+<link rel="canonical" href="http://localhost:4000/architecture/" />
+<meta property="og:url" content="http://localhost:4000/architecture/" />
+<meta property="og:site_name" content="Oasis Loss Modelling Framework" />
+<script type="application/ld+json">
+{"name":null,"description":"Open source catastrophe modelling platform, free to use by all","author":null,"@type":"WebPage","url":"http://localhost:4000/architecture/","publisher":null,"image":null,"headline":"Oasis Platform Architecture","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Oasis Loss Modelling Framework" />
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Oasis Loss Modelling Framework logo"></a>
+				Oasis Loss Modelling Framework
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav >
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/"></a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/"></a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Oasis Loss Modelling Framework</h2>
+				<h3>Oasis Platform Architecture</h3>
+			</div>
+			<article class="content">
+				<h2 id="oasis-platform">Oasis Platform</h2>
+
+<h3 id="oasis-ui">Oasis UI</h3>
+
+<p>TODO</p>
+
+<h3 id="oasis-platform-architecture">Oasis Platform Architecture</h3>
+
+<p><img src="/static/oasis_architecture_tiers.jpg" alt="Oasis UI and Platform architecture" /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Component</strong></td>
+      <td><strong>Description</strong></td>
+      <td><strong>Technology</strong></td>
+    </tr>
+    <tr>
+      <td>Oasis UI</td>
+      <td>Browser based application for managing exposure data and operating modelling workflows</td>
+      <td>R Shiny, ShinyProxy</td>
+    </tr>
+    <tr>
+      <td>Oasis</td>
+      <td>UI API	Services for interacting with exposure and output data</td>
+      <td>Flask</td>
+    </tr>
+    <tr>
+      <td>Oasis UI Database</td>
+      <td>Storage for exposure data, workflow configurations and system data.</td>
+      <td>SQL Server</td>
+    </tr>
+    <tr>
+      <td>Oasis API</td>
+      <td>Services for uploading Oasis files, running analyses and retrieving outputs.</td>
+      <td>Flask, Celery</td>
+    </tr>
+    <tr>
+      <td>Message Queue</td>
+      <td>Queues for managing workload across multiple calculation back ends.</td>
+      <td>Rabbit MQ</td>
+    </tr>
+    <tr>
+      <td>Data store</td>
+      <td>Storage for transient analysis data.</td>
+      <td>File share</td>
+    </tr>
+    <tr>
+      <td>Keys Server</td>
+      <td>Model specific services for generating area peril and vulnerability keys for a particular set of exposures.</td>
+      <td>Flask, Python</td>
+    </tr>
+    <tr>
+      <td>Analysis Worker</td>
+      <td>Executes a model.</td>
+      <td>Celery, running as daemon, ktools, model data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="technologies">Technologies</h2>
+
+<h3 id="using">Using</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Python 2.7</td>
+      <td>General system programming and tools</td>
+    </tr>
+    <tr>
+      <td>C++ 11</td>
+      <td>Simulation and analytics kernel.</td>
+    </tr>
+    <tr>
+      <td>SQL Server 2016</td>
+      <td>Application database for UI.</td>
+    </tr>
+    <tr>
+      <td>Docker</td>
+      <td>Deployment of Oasis Platform and UI.</td>
+    </tr>
+    <tr>
+      <td>Ubuntu 16.07</td>
+      <td>Development servers and base Docker image.</td>
+    </tr>
+    <tr>
+      <td>AWS EC2</td>
+      <td>Cloud infrastructure for Oasis Model Library and Oasis Pltaform deployment.</td>
+    </tr>
+    <tr>
+      <td>Jenkins 2 with BlueOcean</td>
+      <td>CI system.</td>
+    </tr>
+    <tr>
+      <td>Flask</td>
+      <td>Web service framework.</td>
+    </tr>
+    <tr>
+      <td>Apache</td>
+      <td>Web server.</td>
+    </tr>
+    <tr>
+      <td>Terraform</td>
+      <td>Infrastructure automation.</td>
+    </tr>
+    <tr>
+      <td>Sphinx</td>
+      <td>Code documentation generation.</td>
+    </tr>
+    <tr>
+      <td>RShiny</td>
+      <td>Application framework build on R.</td>
+    </tr>
+    <tr>
+      <td>ShinyProxy</td>
+      <td>Server for scaling RShiny applications.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="adopting">Adopting</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Python 3</td>
+      <td>General system programming and tools.</td>
+    </tr>
+    <tr>
+      <td>RedHat</td>
+      <td>Development servers and base Docker image.</td>
+    </tr>
+    <tr>
+      <td>Azure</td>
+      <td>Oasis Platform deployment.</td>
+    </tr>
+    <tr>
+      <td>MySql</td>
+      <td>Application database for UI.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="trialing">Trialing</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Kubernetes</td>
+      <td>Managing Oasis Platform compute cluster.</td>
+    </tr>
+    <tr>
+      <td>Nginx</td>
+      <td>Web server.</td>
+    </tr>
+    <tr>
+      <td>Jupyter</td>
+      <td>Python notebooks for running Oasis MDK.</td>
+    </tr>
+  </tbody>
+</table>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
